@@ -301,8 +301,14 @@ body{
 	top: -90px;
 }
 
-@media only screen and (max-width: 768px) {
-    .kite, .kite1, .tail {
+@media only screen and (max-width: 767px) {
+    /* Hide the title on mobile */
+    .heading {
         display: none;
+    }
+
+    /* Show the kites on mobile */
+    .kite, .kite1 {
+        display: block;
     }
 }
