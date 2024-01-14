@@ -1,0 +1,36 @@
+<!-- src/app/makar-sankranti/makar-sankranti.component.html -->
+<div id="background-wrap">
+    <div class="x1">
+      <div class="cloud"></div>
+    </div>
+  
+    <div class="x2">
+      <div class="cloud"></div>
+    </div>
+  
+    <div class="x3">
+      <div class="cloud"></div>
+    </div>
+  
+    <div class="x4">
+      <div class="cloud"></div>
+    </div>
+  
+    <div class="x5">
+      <div class="cloud"></div>
+    </div>
+  </div>
+  
+  <div *ngFor="let _ of getTailArray()" class="kite">
+    <div class="tail"></div>
+  </div>
+  
+  <div *ngFor="let _ of getTailArray()" class="kite1">
+    <div class="tail"></div>
+  </div>
+  
+  <div class="wish">
+    <img src="https://freepngimg.com/thumb/makar_sankranti/96848-makar-sankranti-text-for-happy-party-2020.png" alt="Makar Sankranti">
+    <h1 class="heading">{{ title }}</h1>
+  </div>
+  
