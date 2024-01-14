@@ -301,14 +301,76 @@ body{
 	top: -90px;
 }
 
-@media only screen and (max-width: 767px) {
-    /* Hide the title on mobile */
-    .heading {
-        display: none;
+/* For smaller screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+    .kite, .kite1 {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        transform: rotate(45deg);
+        top: -70px; /* Adjust this value as needed to position kites above the image */
+        left: 50%;
+        margin-left: -50px;
+        animation: flying-mobile 5s ease-in-out infinite; /* Apply animation for mobile devices */
     }
 
-    /* Show the kites on mobile */
-    .kite, .kite1 {
-        display: block;
+    .kite1 {
+        animation: flying1-mobile 5s ease-in-out infinite;
+    }
+
+    .wish {
+        text-align: center;
+        margin-top: 50px; /* Adjust this value as needed to create space between kites and the image */
+    }
+
+    .wish img {
+        width: 80%;
+        margin: 0 auto; /* Center the image */
+        position: relative;
+        z-index: 1; /* Ensure the image is above kites */
+    }
+
+    .heading {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    /* New keyframes for mobile animation */
+    @keyframes flying-mobile {
+        0%, 100% {
+            top: -70px; /* Adjust this value as needed */
+            left: 50%;
+        }
+        25% {
+            top: -90px; /* Adjust this value as needed */
+            left: 55%;
+        }
+        50% {
+            top: -60px; /* Adjust this value as needed */
+            left: 70%;
+        }
+        75% {
+            top: -50px; /* Adjust this value as needed */
+            left: 55%;
+        }
+    }
+
+    @keyframes flying1-mobile {
+        0%, 100% {
+            top: -100px; /* Adjust this value as needed */
+            left: 20%;
+        }
+        25% {
+            top: -90px; /* Adjust this value as needed */
+            left: 55%;
+        }
+        50% {
+            top: -95px; /* Adjust this value as needed */
+            left: 70%;
+        }
+        75% {
+            top: -80px; /* Adjust this value as needed */
+            left: 65%;
+        }
     }
 }
